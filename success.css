@@ -1,0 +1,291 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #F4E9DA;
+  font-family: 'Poppins', sans-serif;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.navbar {
+  background-color: #B89C65;
+  padding: 25px 0;
+  border-radius: 3px;
+}
+.navbar .active{
+  color: #000;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+ gap:40px;
+  
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li a {
+  color:#ffffff;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 300;
+  margin-left: 80px;
+}
+.top-bar {
+  background-color: #D4C7B5; /* beige color in your image */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 40px;
+}
+
+.logo-area .logo {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 400;
+   font-family: 'Poppins', sans-serif;
+}
+
+.logo-area .logo span {
+  color: #B89C65; /* gold */
+}
+
+.logo-area .logo strong {
+  color: #000;
+  font-weight: 600;
+}
+
+.logo-area .tagline {
+  margin: 0;
+  margin-top: -5px;
+  font-size: 12px;
+  color: white;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  background: white;
+  padding: 15px 20px;
+  border-radius: 50px;
+  gap: 10px;
+}
+
+.search-box input {
+  border: none;
+  outline: none;
+  width:150%;
+  font-size: 19px;
+  background: transparent;
+ 
+}
+.search-box input::placeholder{
+  color: #000;
+}
+.search-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+/* ICONS + PROFILE */
+.top-icons {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-left: 20px;
+}
+
+.top-icons i {
+  font-size: 25px;
+  color: #B89C65;
+  cursor: pointer;
+   text-shadow: 0px 0px 1px #B89C65; 
+}
+
+.top-icons i:hover {
+  opacity: 0.7;
+}
+
+/* PROFILE PIC */
+.profile-pic {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.success-wrapper {
+    text-align: center;
+    padding: 80px 0;
+    background: #F1E6D8; /* light cream background */
+}
+
+/* Circle Icon */
+.success-icon {
+    width: 80px;
+    height: 80px;
+    background: #B89C65;
+    color: white;
+    border-radius: 50%;
+    margin: 0 auto 25px auto;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 80px;
+}
+
+/* Main Title */
+.success-title {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0;
+    color: #000;
+}
+
+/* Small description */
+.success-message {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 40px;
+}
+
+/* Sub heading */
+.success-sub {
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    letter-spacing: 9;
+}
+
+/* Email text */
+.success-email {
+    font-size: 18px;
+    font-weight: 500;
+    color: #000;
+}
+.success-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 30px;
+}
+
+/* Footer */
+.footer {
+  background: #B89C65;
+  color: white;
+  padding: 50px 80px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* TOP COLUMNS */
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.footer-column h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.footer-column p {
+  margin: 8px 0;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.footer-column p:hover {
+  opacity: 0.8;
+}
+
+/* LINE */
+.footer-line {
+  border: 0;
+  border-top: 2px solid white;
+  margin: 25px 0 35px 0;
+}
+
+/* BOTTOM LINKS */
+.footer-bottom {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 15px;
+  column-gap: 30px;
+  font-size: 17px;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+.footer-final {
+  background: #2D2D2D;
+  color: white;
+  padding: 120px 80px;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+
+  
+   /* <-- MAKES BOTH PERFECTLY ALIGNED */
+}
+
+/* CENTER BLOCK */
+.footer-center-block {
+ position: absolute;
+  left: 360px;
+  top: 30px;
+ 
+  
+}
+
+.footer-copy {
+  font-size: 23px;
+  font-weight: 500;
+top:-9px;
+  
+}
+
+/* SOCIAL ICONS */
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+}
+
+.social-icon img{
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.social-icon:hover {
+  opacity: 0.8;
+}
+
+/* RIGHT SIDE CONTACT */
+.footer-contact-final {
+  position: absolute;
+  right: 60px;
+  top: 40px;
+  text-align: left;
+}
+
+.footer-contact-final p {
+  margin: 6px 0;
+  font-size: 21px;
+}
+
+.footer-contact-final i {
+  margin-right: 8px;
+  font-size: 18px;
+  color: #000;
+}
+
+

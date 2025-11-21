@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Restaurant</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+<!-- Bootstrap Icons CDN -->
+<link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+  <link rel="stylesheet" href="reservation.css">
+</head>
+<body>
+<nav class="navbar">
+  <ul>
+      <li><a href="home.html" >Home</a></li>
+    <li><a href="reservation.html" class="active">Reservation</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="about.html">About us</a></li>
+    <li><a href="contact.html">Contact us</a></li>
+    <li><a href="help.html">Help</a></li>
+  </ul>
+</nav>
+<header class="top-bar">
+  <div class="logo-area">
+    <h2 class="logo">
+      <span>Book</span><strong>mytable</strong>
+    </h2>
+    <p class="tagline">Never wait for your meal</p>
+  </div>
+
+  <div class="search-box">
+    <input type="text" placeholder="Search">
+    <button class="search-btn">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#000"
+        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="11" cy="11" r="8"></circle>
+        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+      </svg>
+    </button>
+  </div>
+
+  <!-- NEW ICONS BLOCK -->
+  <div class="top-icons">
+    <i class="bi bi-bell"></i>
+    <i class="bi bi-headset" onclick="window.location.href='contact.html'"></i>
+    <i class="bi bi-heart" onclick="window.location.href='whishlist.html'"></i>
+
+    <!-- PROFILE PIC -->
+    <img src="Images/Photo by Dani.png" class="profile-pic">
+  </div>
+
+</header>
+
+<div id="listScreen">
+
+  <div class="hero-image">
+    <img src="Images/unsplash_F4sopwQE8qw.png">
+  </div>
+
+  <div class="restaurant-title">
+    <h2>Perfect Buffet Restaurant in Chennai</h2>
+  </div>
+  <!-- ======== CARD 1 ======== -->
+  <div class="food-card" onclick="showDetails(
+      'Grant Buffet',
+      'Upper Ground Floor, East Court, Phoenix Market City, Viman Nagar, Chennai',
+      'North Indian, Mohali, Italian, BBQ',
+      'Rs.1000',
+      'Images/Frame 30681.png'
+    )">
+
+      <div class="img-box">
+          <img src="Images/Frame 30681.png">
+      
+      </div>
+      <div class="heart-icon">
+        <i class="bi bi-heart"></i>
+    </div>
+      <div class="details">
+          <h2>Grant Buffet</h2>
+          
+          <p class="sub">Viman nagar</p>
+          <hr>
+          <p class="food-type">North Indian, Mohali, Italian, BBQ</p>
+          <p class="cost-title">Cost for two :</p>
+          <p class="price">Rs.1000</p>
+      </div>
+  </div>
+
+  <br>
+
+  <!-- ======== CARD 2 ======== -->
+  <div class="food-card" onclick="showDetails(
+      'Spice Chicken',
+      'Viman Nagar, Chennai',
+      'North Indian, Mohali, Italian, BBQ',
+      'Rs.1000',
+      'Images/unsplash_tXQKzLpfnHs.png'
+    )">
+      <div class="img-box">
+          <img src="Images/unsplash_tXQKzLpfnHs.png">
+      </div>
+ <div class="heart-icon">
+        <i class="bi bi-heart"></i>
+    </div>
+      <div class="details">
+          <h2>Spice Chicken</h2>
+          <p class="sub">Viman nagar</p>
+          <hr>
+          <p class="food-type">North Indian, Mohali, Italian, BBQ</p>
+          <p class="cost-title">Cost for two :</p>
+          <p class="price">Rs.1000</p>
+      </div>
+  </div>
+
+  <br>
+
+  <!-- ======== CARD 3 ======== -->
+  <div class="food-card" onclick="showDetails(
+      'Cigreee',
+      'Viman Nagar, Chennai',
+      'North Indian, Mohali, Italian, BBQ',
+      'Rs.1000',
+      'Images/unsplash_F4sopwQE8qw-1.png'
+    )">
+      <div class="img-box">
+        <img src="Images/unsplash_F4sopwQE8qw-1.png">
+      </div>
+ <div class="heart-icon">
+        <i class="bi bi-heart"></i>
+    </div>
+      <div class="details">
+        <h2>Cigreee</h2>
+        <p class="sub">Viman nagar</p>
+        <hr>
+        <p class="food-type">North Indian, Mohali, Italian, BBQ</p>
+        <p class="cost-title">Cost for two :</p>
+        <p class="price">Rs.1000</p>
+      </div>
+  </div>
+
+  <br>
+
+  <!-- ======== CARD 4 ======== -->
+  <div class="food-card" onclick="showDetails(
+      'Taste of Punjab',
+      'Viman Nagar, Chennai',
+      'North Indian, Mohali, Italian, BBQ',
+      'Rs.1000',
+      'Images/unsplash_SL9M5sBHOyE.png'
+    )">
+
+      <div class="img-box">
+        <img src="Images/unsplash_SL9M5sBHOyE.png">
+      </div>
+ <div class="heart-icon">
+        <i class="bi bi-heart"></i>
+    </div>
+      <div class="details">
+        <h2>Taste of Punjab</h2>
+        <p class="sub">Viman nagar</p>
+        <hr>
+        <p class="food-type">North Indian, Mohali, Italian, BBQ</p>
+        <p class="cost-title">Cost for two :</p>
+        <p class="price">Rs.1000</p>
+      </div>
+  </div>
+
+</div> <!-- END listScreen -->
+
+<!-- ---------------------- SCREEN 2 (Restaurant Details) ---------------------- -->
+<!-- ---------------------- SCREEN 2 (Restaurant Details) ---------------------- -->
+<div id="detailsScreen" style="display:none;">
+
+  <div class="detail-row">
+
+      <!-- LEFT SIDE IMAGE -->
+      <div class="detail-left">
+          <img id="detailImage" alt="">
+      </div>
+
+      <!-- RIGHT SIDE TEXT -->
+      <div class="detail-right">
+          <div class="detail-header">
+              <h2 id="detailName"></h2>
+ <div class="heart-icon">
+        <i class="bi bi-heart"></i>
+    </div>          </div>
+
+          <p id="detailAddress" class="addr"></p>
+
+          <hr class="detail-line">
+
+          <p id="detailCuisines" class="cuisines"></p>
+
+          <p id="detailCost" class="cost"></p>
+
+          <div class="stars">★★★★★</div>
+      </div>
+
+  </div>
+
+  <!-- BOTTOM TABS EXACT LIKE SCREENSHOT -->
+<div class="detail-tabs">
+    
+    <div class="tab-item" id="tabOverview" onclick="activateTab('overview')">
+        Overview Restaurent
+        <span class="tab-underline"></span>
+    </div>
+
+    <div class="tab-divider"></div>
+
+    <div class="tab-item" id="tabMenu" onclick="activateTab('menu')">
+        Menu Card
+        <span class="tab-underline"></span>
+    </div>
+
+</div>
+
+</div>
+
+<!-- OVERVIEW CONTENT -->
+<div id="overviewContent" class="overview-box">
+<img src="Images/Screenshot 2025-11-20 233643.png">
+    <h2 class="ov-title">Grant Buffet Overview</h2>
+
+    <div class="ov-row">
+        <!-- LEFT -->
+        <div class="ov-left">
+
+            <h3 class="ov-heading">Phone Number</h3>
+            <p class="ov-text">39883983923</p>
+
+            <h3 class="ov-heading">Cuisines</h3>
+            <p class="ov-text">North Indian, Mohali, Italian, BBQ</p>
+
+            <h3 class="ov-heading">Average Cost</h3>
+            <p class="ov-text cost-line">
+                <span class="rupee">₹ 1000</span> for two peoples (approx.)
+            </p>
+
+            <h3 class="ov-heading">Famous for</h3>
+            <p class="ov-text">
+                Decor, Live Music, Live Grill, Mutton Roganjosh,  
+                Naan, Dahi Vada, Salads, Kulfi, Chikken Tikka
+            </p>
+
+        </div>
+
+        <!-- RIGHT -->
+        <div class="ov-right">
+
+            <h3 class="ov-heading">Opening hours</h3>
+            <p class="ov-text">⏱️ 12noon – 3pm, 7pm – 11pm</p>
+
+            <h3 class="ov-heading">Address</h3>
+            <p class="ov-text">
+                Upper Ground Floor, East Court,<br>
+                Phoenix Market City, Viman nagar,<br>
+                Chennai – 623088
+            </p>
+
+             <div class="map-box">
+    <img src="Images/ChatGPT Image Jul 2, 2025, 06_41_54 PM 2.png" alt="map">
+
+    <div class="map-text">
+      <p><i class="bi bi-telephone-fill"></i> (123) 8940-985498</p>
+      <p><i class="bi bi-envelope"></i> Info@Bookmytable.com</p>
+      <p><i class="bi bi-geo-alt-fill"></i> Chennai 54375387</p>
+    </div>
+  </div>
+
+            <button class="reserve-btn" onclick="window.location.href='reservationtable.html'">Reserve Now</button>
+
+        </div>
+    </div>
+
+</div>
+<!-- MENU CONTENT -->
+<div id="menuContent" class="menu-box" style="display:none;">
+
+    <h2 class="menu-title">Our Menu Card</h2>
+
+    <!-- INNER MENU TABS -->
+    <div class="inner-tabs">
+
+        <div class="inner-tab" id="tabStarters" onclick="innerMenuTab('starters')">
+            Starters
+        </div>
+
+        <div class="inner-tab" id="tabMain" onclick="innerMenuTab('main')">
+            Main course
+        </div>
+
+        <div class="inner-tab inner-active" id="tabDesserts" onclick="innerMenuTab('desserts')">
+            Desserts
+        </div>
+
+        <div class="inner-tab" id="tabBeverages" onclick="innerMenuTab('beverages')">
+            Bevrages
+        </div>
+
+    </div>
+
+    <!-- MENU GRID -->
+    <div id="dessertsContent" class="menu-grid">
+
+    <!-- CARD 1 -->
+    <div class="menu-card">
+        <img src="Images/unsplash_O-hiJTQDa0I.png">
+
+        <!-- HEART ICON TOP RIGHT -->
+        
+
+        <div class="menu-info">
+            <div class="heart-icon1">
+            <i class="bi bi-heart"></i>
+        </div>
+            <h3>Panno Catto</h3>
+         
+            <p class="price1">₹ 240</p>
+        </div>
+ 
+        <button class="add-btn" onclick="window.location.href='whishlist.html'">Add Item</button>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="menu-card">
+      
+        <img src="Images/unsplash_jq02JcjxDik.png">
+
+       
+<div class="menu-info">
+           <div class="heart-icon1">
+            <i class="bi bi-heart"></i>
+        </div>
+        
+            <h3>Brownie Ice</h3>
+            
+            <p class="price1">₹ 280</p>
+        </div>
+
+        <button class="add-btn" onclick="window.location.href='whishlist.html'">Add Item</button>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="menu-card">
+      
+        <img src="Images/unsplash_dpKWiCh7g0U.png">
+
+        
+
+        <div class="menu-info">
+          <div class="heart-icon1">
+            <i class="bi bi-heart"></i>
+        </div>
+            <h3>Chesse Cake</h3>
+            <p class="price1">₹ 280</p>
+        </div>
+
+        <button class="add-btn" onclick="window.location.href='whishlist.html'">Add Item</button>
+    </div>
+
+    <!-- CARD 4 -->
+    <div class="menu-card">
+      
+        <img src="Images/unsplash_4doynaKi3N8.png">
+
+        
+
+        <div class="menu-info">
+          <div class="heart-icon1">
+            <i class="bi bi-heart"></i>
+        </div>
+            <h3>Apple Pie</h3>
+            <p class="price1">₹ 240</p>
+        </div>
+
+        <button class="add-btn" onclick="window.location.href='whishlist.html'">Add Item</button>
+    </div>
+
+    <!-- CARD 5 -->
+    <div class="menu-card">
+      
+        <img src="Images/unsplash_jKCy1UKE-4Y.png">
+
+        
+
+        <div class="menu-info">
+          <div class="heart-icon1">
+            <i class="bi bi-heart"></i>
+        </div>
+            <h3>Gulab Jamun</h3>
+            <p class="price1">₹ 240</p>
+        </div>
+
+       <button class="add-btn" onclick="window.location.href='whishlist.html'">Add Item</button>
+    </div>
+
+    <!-- CARD 6 -->
+    <div class="menu-card">
+       
+        <img src="Images/unsplash_pkR5R4tcTq8.png">
+
+       
+
+        <div class="menu-info">
+          <div class="heart-icon1">
+            <i class="bi bi-heart"></i>
+        </div>
+            <h3>Creme Bruele</h3>
+            <p class="price1">₹ 240</p>
+        </div>
+
+        <button class="add-btn" onclick="window.location.href='whishlist.html'">Add Item</button>
+    </div>
+
+</div>
+
+</div>
+
+<br>
+<footer class="footer">
+
+  <div class="footer-top">
+
+    <div class="footer-column">
+      <h3>Company</h3>
+      <p>About Us</p>
+      <p>Contact Us</p>
+      <p>Customer Reviews</p>
+      <p>Add Your Restaurent</p>
+    </div>
+
+    <div class="footer-column">
+      <h3>Policy Info</h3>
+      <p>Terms & Conditions</p>
+      <p>Cookies Policy</p>
+      <p>Cancellation Policy</p>
+      <p>Privacy Policy</p>
+    </div>
+
+    <div class="footer-column">
+      <h3>Cities</h3>
+      <p>Chennai</p>
+      <p>Banglore</p>
+      <p>Hyderabad</p>
+      <p>Mumbai</p>
+    </div>
+
+    <div class="footer-column">
+      <h3>Help</h3>
+      <p>Booking Status</p>
+      <p>Add Restaurent</p>
+    </div>
+
+  </div>
+
+  <hr class="footer-line">
+
+  <div class="footer-bottom">
+    <p>Restaurent in Chennai</p>
+    <p>Restaurent in Pune</p>
+
+    <p>Restaurent in Bangalore</p>
+    <p>Restaurent in Kolkata</p>
+
+    <p>Restaurent in Hyderabad</p>
+    <p>Restaurent in Mumbai</p>
+  </div>
+
+</footer>
+
+<footer class="footer-final">
+
+  <div class="footer-center-block">
+    <p class="footer-copy">
+      © 2025 Book My Table.Co.in. All rights reserved.
+    </p>
+
+    <div class="footer-social">
+      <img src="Images/fb.png" class="social-icon">
+      <img src="Images/twit.png" class="social-icon">
+      <img src="Images/insta.png" class="social-icon">
+    </div>
+  </div>
+
+  <div class="footer-contact-final">
+    <p><i class="bi bi-telephone-fill"></i> (123) 8940-985498</p>
+    <p><i class="bi bi-envelope-fill"></i> Info@Bookmytable.com</p>
+    <p><i class="bi bi-geo-alt-fill"></i> Chennai 54375387</p>
+  </div>
+
+</footer>
+
+<script>
+
+function goBack() {
+    document.getElementById("detailsScreen").style.display = "none";
+    document.getElementById("listScreen").style.display = "block";
+}
+
+
+function showDetails(name, address, cuisines, cost, image) {
+
+    // hide first screen, show second screen
+    document.getElementById("listScreen").style.display = "none";
+    document.getElementById("detailsScreen").style.display = "block";
+
+    // fill text
+    document.getElementById("detailImage").src = image;
+    document.getElementById("detailName").textContent = name;
+    document.getElementById("detailAddress").textContent = address;
+    document.getElementById("detailCuisines").textContent = cuisines;
+    document.getElementById("detailCost").textContent = "Cost for two : " + cost;
+
+    // ---- SHOW Overview ----
+    document.getElementById("overviewContent").style.display = "block";
+
+    // ---- HIDE Menu ----
+    document.getElementById("menuContent").style.display = "none";
+
+    // ---- Set tab active ----
+    document.getElementById("tabOverview").classList.add("active");
+    document.getElementById("tabMenu").classList.remove("active");
+}
+
+function goBack() {
+    document.getElementById("detailsScreen").style.display = "none";
+    document.getElementById("listScreen").style.display = "block";
+}
+
+
+function showDetails(name, address, cuisines, cost, image) {
+
+    document.getElementById("listScreen").style.display = "none";
+    document.getElementById("detailsScreen").style.display = "block";
+
+    document.getElementById("detailImage").src = image;
+    document.getElementById("detailName").textContent = name;
+    document.getElementById("detailAddress").textContent = address;
+    document.getElementById("detailCuisines").textContent = cuisines;
+    document.getElementById("detailCost").textContent = "Cost for two : " + cost;
+
+    // Default: show overview
+    activateTab("overview");
+
+    // Default inner menu tab = desserts
+    innerMenuTab("desserts");
+}
+
+
+
+// ✅ FIXED — MAIN TAB SWITCH (Overview / Menu)
+function activateTab(tabName) {
+
+    // remove active classes
+    document.getElementById("tabOverview").classList.remove("active");
+    document.getElementById("tabMenu").classList.remove("active");
+
+    // hide both contents
+    document.getElementById("overviewContent").style.display = "none";
+    document.getElementById("menuContent").style.display = "none";
+
+    if (tabName === "overview") {
+        document.getElementById("tabOverview").classList.add("active");
+        document.getElementById("overviewContent").style.display = "block";
+    }
+
+    if (tabName === "menu") {
+        document.getElementById("tabMenu").classList.add("active");
+        document.getElementById("menuContent").style.display = "block";
+    }
+}
+
+
+
+// ✅ FIXED — INNER MENU TABS (Starters / Main / Desserts / Beverages)
+function innerMenuTab(tab) {
+
+    // remove all active classes
+    document.getElementById("tabStarters").classList.remove("inner-active");
+    document.getElementById("tabMain").classList.remove("inner-active");
+    document.getElementById("tabDesserts").classList.remove("inner-active");
+    document.getElementById("tabBeverages").classList.remove("inner-active");
+
+    // hide all menu sections
+    document.getElementById("dessertsContent").style.display = "none";
+
+    if (tab === "desserts") {
+        document.getElementById("tabDesserts").classList.add("inner-active");
+        document.getElementById("dessertsContent").style.display = "flex";
+    }
+}
+
+</script>
+</body>
+</html>
